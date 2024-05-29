@@ -116,7 +116,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                 </div>
 
                 <div class="form-group col-md-6">
-                  <label class="control-label">Title Name</label>
+                  <label class="control-label">Package Title</label>
                   <input class="form-control" name="titlename" id="titlename" type="text" placeholder="Enter Your Title Name">
                 </div>
 

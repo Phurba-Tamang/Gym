@@ -11,7 +11,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
 
   <head>
     <meta name="description" content="Vali is a">
-    <title>Admin | New Bookings</title>
+    <title>Admin | Paid Bookings</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,7 +45,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     <th>Email</th>
                     <th>Booking Date</th>
                     <th>Package Name</th>
-                    <th>Title</th>
+                    <th>Price</th>
                     <th>Action</th>
                   </tr>
                 </thead>

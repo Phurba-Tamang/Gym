@@ -43,7 +43,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     <th>S.N.</th>
                     <th>Category</th>
                     <th>Package Type</th>
-                    <th>Title</th>
+                    <th>Package Title</th>
                     <th>Package Duration</th>
                     <th>Price</th>
                     <!-- <th>Action</th> -->
@@ -67,7 +67,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                   $Price = $row['Price'];
 
                   $categoryIds[] = $categoryId;
-                  $PackageTypes[] = $PackageType;
+                  $PackageTypes[] = $PackageTypeId;
 
 
                   $sql1 = "SELECT * FROM `tblcategory` WHERE id = '$categoryId'";
@@ -76,7 +76,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     $categoryName = $category['category_name'];
                   }
 
-                  $sql2 = "SELECT * FROM `tblcategory` WHERE id = '$categoryId'";
+                  $sql2 = "SELECT * FROM `tblpackage` WHERE id = '$PackageTypeId'";
                   $packageResult = mysqli_query($con, $sql2);
                   while ($package = mysqli_fetch_assoc($packageResult)) {
                     $packageType = $package['PackageName'];

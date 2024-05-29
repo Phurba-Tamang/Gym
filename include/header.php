@@ -41,7 +41,7 @@
 		<div class="header-bottom">
 			<a href="index.php" class="site-logo" style="color:#fff; font-weight:bold; font-size:26px;">
 				GYM<br />
-				<small style="margin-top:-4%;">Gym Management System</small>
+				<small style="margin-top:-4%;">Management System</small>
 			</a>
 
 			<div class="container">

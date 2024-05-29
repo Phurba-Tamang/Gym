@@ -41,7 +41,6 @@ if (strlen($_SESSION["uid"]) == 0) {
         <div class="row">
           <div class="col-lg-7 m-auto text-white">
             <h2>Booking History</h2>
-
           </div>
         </div>
       </div>
@@ -51,9 +50,7 @@ if (strlen($_SESSION["uid"]) == 0) {
     <!-- Contact Section -->
     <section class="contact-page-section spad overflow-hidden">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-12">
             <table class="table table-bordered">
               <thead>
@@ -94,7 +91,6 @@ if (strlen($_SESSION["uid"]) == 0) {
               if ($query->rowCount() > 0) {
                 foreach ($results as $result) {
               ?>
-
                   <tbody>
                     <tr>
                       <td><?php echo ($cnt); ?></td>

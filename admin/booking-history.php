@@ -63,7 +63,11 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     // Fetch user details
                     $sql1 = "SELECT * FROM tbluser WHERE id = '$userId'";
                     $userResult = mysqli_query($con, $sql1);
-                    $user = mysqli_fetch_assoc($userResult);
+                    // $user = mysqli_fetch_assoc($userResult);
+                    while ($user = mysqli_fetch_assoc($userResult)) {
+                      $name = $user['fname'] . " " . $user['lname'];
+                      $email = $user['email'];
+                    }
 
                     $sql2 = "SELECT * FROM tbladdpackage WHERE id = '$packageId'";
                     $packageResult = mysqli_query($con, $sql2);

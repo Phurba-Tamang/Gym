@@ -38,7 +38,7 @@ update tblbooking set paymentType=:Paymenttype where id=:bookindid";
 
   <head>
     <meta name="description" content="Vali is a">
-    <title>Booking Details</title>
+    <title>Admin | Booking Details</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,7 +102,7 @@ on t2.PackageType=t5.id
                         <td><?php echo $result->title; ?></td>
                       </tr>
                       <tr>
-                        <th>Package Duratiobn</th>
+                        <th>Package Duration</th>
                         <td><?php echo $result->PackageDuratiobn; ?></td>
                         <th>Price</th>
                         <td><?php echo $result->Price; ?></td>

@@ -44,7 +44,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     <th>Email</th>
                     <th>Booking Date</th>
                     <th>Package Name</th>
-                    <th>Title</th>
+                    <th>Price</th>
                     <th>Action</th>
                   </tr>
                 </thead>
